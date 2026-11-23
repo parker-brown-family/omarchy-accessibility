@@ -5,7 +5,7 @@ strength: argument with long experience behind it
 would_change: a measured comparison
 ---
 
-Outspoken read a greyed-out menu item as if it worked, because it read the picture.
+Outspoken read a greyed-out menu item as if it worked, because the greyness never reached it.
 
 - [raman-smithsonian](../sources/raman-smithsonian.md)
 - [itd-gui-1995](../sources/itd-gui-1995.md)

@@ -1,5 +1,5 @@
 ---
-claim: Access has arrived years after each new interface
+claim: Access to the Macintosh and to touch screens arrived after the interface did
 sources: itd-gui-1995, afb-ibm-2004, sliderule-2008
 strength: history
 would_change: a counterexample: access built in from the first release
