@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "brownfamilysports.accessibility-voice",
+  "name": "Accessibility voice",
+  "version": "0.0.1",
+  "author": "Parker Brown",
+  "license": "MIT",
+  "description": "Research trial: keeps the local voice loop running, so a held key can read and press what is on screen",
+  "kinds": ["service"],
+  "keepLoaded": true,
+  "entryPoints": { "service": "Service.qml" }
+}

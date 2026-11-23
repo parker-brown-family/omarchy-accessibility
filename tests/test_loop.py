@@ -1,5 +1,5 @@
 """The loop's promises, on stand-in controls. Run: python3 -m unittest discover -s tests"""
-import sys, unittest
+import json, sys, tempfile, unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "loop"))
@@ -68,6 +68,46 @@ class Choose(unittest.TestCase):
         self.assertEqual(oa.parse("Press the Bold button."), ("press", "bold"))
         self.assertEqual(oa.parse("Where am I?"), ("where", ""))
         self.assertEqual(oa.parse("delete everything")[0], "unknown")
+
+
+class Taught(unittest.TestCase):
+    def setUp(self):
+        self.dir = tempfile.TemporaryDirectory(); self.old = oa.TAUGHT; oa.TAUGHT = Path(self.dir.name) / "p/phrases.json"
+
+    def tearDown(self): oa.TAUGHT = self.old; self.dir.cleanup()
+
+    def test_teach_hear_back_forget(self):
+        oa.answer("when I say shout, press bold")
+        self.assertEqual(oa.answer("what have I taught you"), "shout presses bold.")
+        self.assertIn("Forgotten", oa.answer("forget shout")); self.assertEqual(oa.taught(), {})
+
+    def test_replacing_says_what_it_was(self):
+        oa.answer("when I say shout press bold")
+        self.assertIn("used to press bold", oa.answer("when I say shout press italic"))
+
+    def test_cannot_take_over_a_built_in(self):
+        self.assertIn("Nothing was saved", oa.answer("when I say press save press delete")); self.assertEqual(oa.taught(), {})
+
+    def test_a_damaged_file_is_never_overwritten(self):
+        oa.TAUGHT.parent.mkdir(); oa.TAUGHT.write_text('{"a": 1}')
+        self.assertIn("could not read or save", oa.answer("when I say shout press bold"))
+        self.assertEqual(oa.TAUGHT.read_text(), '{"a": 1}')
+
+
+class Hints(unittest.TestCase):
+    def test_names_cannot_break_out_and_stay_short(self):
+        h = oa.hints(['A"\n[whisper]\nmodel = "x"'] + [f"Name {i}" for i in range(500)])
+        self.assertNotIn('"', h); self.assertNotIn("\n", h); self.assertNotIn("[", h); self.assertLess(len(h), 1000)
+
+    def test_asking_where_never_presses(self):
+        c = Control("Bold"); c.get_parent = lambda: None
+        win = Control("Writer", role="frame"); old = oa.controls; oa.controls = lambda w: [c]
+        try: said = oa.answer("where is bold", window=win)
+        finally: oa.controls = old
+        self.assertEqual(c.pressed, 0); self.assertIn("Bold is in", said)
+
+    def test_find_is_not_press(self):
+        self.assertEqual(oa.parse("where is the bold button"), ("find", "bold")); self.assertEqual(oa.parse("where am I")[0], "where")
 
 
 if __name__ == "__main__":

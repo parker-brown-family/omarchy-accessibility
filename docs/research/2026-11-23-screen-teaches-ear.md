@@ -23,3 +23,16 @@ A stronger recogniser, Whisper small.en with no hints, on two of the voices (134
 **What it shows.** The names help a small recogniser a great deal, and a better recogniser still beats it. Heavier hints press the wrong thing more. Whisper with hints was not tried.
 
 **What it does not show.** Every voice is synthetic, the noise is white, the words are one app's, and nobody blind took part. A first run without silence around the clips was thrown out as unfair: it cut words off. Scripts and raw output: `experiments/2026-11-23/screen_teaches_ear*`, `whisper_same_audio*`. Model: sherpa-onnx-streaming-zipformer-en-2023-06-26.
+
+## Second round: Whisper with the names, the same 134 clips
+
+| Whisper, on the GPU, with any personal prompt removed | Clean | Noise | Wrong presses | Time |
+|---|---|---|---|---|
+| small.en, no hints | 122 | 78 | 0 | 150 to 220 ms |
+| small.en, screen names | 132 | 113 | 0 | 200 to 210 ms |
+| large-v3-turbo, no hints | 123 | 82 | 0 | 330 to 340 ms |
+| large-v3-turbo, screen names | 75 | 55 | 0 | 390 to 475 ms |
+
+The names lift the small model and wreck the large one. Why was not looked into. Use them only with a model they were tested on.
+
+**The cost.** Twenty words that were not on screen, in two voices, chosen to sound like ones that were: 3 of 40 pressed something without hints, 5 of 40 with them ("press pace" became Paste, "press bald" became Bold). Ten ordinary remarks in two voices were never taken as commands. A web page could also name a button to pull hearing toward it, which was not tested.

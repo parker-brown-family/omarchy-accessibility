@@ -44,3 +44,5 @@ Waiting for the person to stop talking; barge-in and echo; whether any of it wor
 ## Other projects and Omarchy's queue, read from GitHub on 2026-11-23
 
 Omarchy: MIT, 4,160 pull requests open and 2,493 merged. omarchy-voice: MIT, 225 stars, about 337 kB, last pushed 2026-09-25. omarchy-accessibility-kit: MIT at the top, with an AGPL-3.0 part (mudra, hand gestures) inside, 0 stars, last pushed 2026-11-11. omarchy-magnifier: MIT, 2 stars, last pushed 2026-11-21. hyprhand: MIT, 0 stars, last pushed 2026-11-20. ATSPI-MCP-Server: AGPL-3.0, 3 stars, last pushed 2025-09-05. niri and COSMIC's compositor: GPL-3.0. otto, another compositor with the keyboard service: MIT.
+
+A chat with GPT that the owner shared suggested a stack and targets. It is a list of leads and no claim here rests on it. Checked: azzenabidi/omarchy-voice exists (MIT, 1 star, push-to-talk with Voxtype, rules, optional Ollama, Piper) and is a different project from wombatoperator/omarchy-voice. Its advice to skip the model for plain commands and keep models loaded matches what was measured. Its targets are its own.

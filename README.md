@@ -2,7 +2,7 @@
 
 The aim: a blind person can install, unlock and use [Omarchy](https://omarchy.org) by listening and talking, with speech models that run on their own computer.
 
-This is at the research stage, and there is nothing to install yet. [A first loop](loop/oa.py) reads the window in front, presses a control by name and says what it checked, from typed words or a recording. What we believe and why is in [the evidence](wiki/README.md): each decision leads to findings, and each finding to the words of its sources. The measurements so far are in [docs/research](docs/research/2026-11-23-measurements.md).
+This is at the research stage, and there is nothing to install yet. [A first loop](loop/oa.py) reads the window in front, presses a control by name, says what it checked, tells you where a control is, and learns your own phrases. [A service](loop/oad.py) keeps it running, and [an Omarchy plugin](plugin/) starts it. None of it has run on a live desktop or with a live microphone. What we believe and why is in [the evidence](wiki/README.md): each decision leads to findings, and each finding to the words of its sources. The measurements so far are in [docs/research](docs/research/2026-11-23-measurements.md).
 
 No blind person has used or reviewed this yet. If you are blind and something here is wrong, an issue saying so is the most useful thing you could send.
 

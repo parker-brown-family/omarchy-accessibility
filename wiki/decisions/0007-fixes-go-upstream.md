@@ -1,9 +1,10 @@
 ---
 title: Offer screen fixes to Omarchy and carry them here until it takes them
-status: proposed
+status: superseded
 decided_by: agent
 date: 2026-11-23
 findings: omarchy-is-silent, speech-goes-outside-core
+superseded_by: 0013-plugin-then-requests
 would_change: the pull requests merging, or a maintainer saying no
 ---
 

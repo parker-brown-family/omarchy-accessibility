@@ -1,0 +1,9 @@
+#!/bin/bash
+# Hold to talk: `oa-talk start` on key down, `oa-talk stop` on key up. Records only in between, and deletes the recording.
+set -euo pipefail
+here=$(cd "$(dirname "$(readlink -f "$0")")" && pwd); dir=${XDG_RUNTIME_DIR:?}; wav=$dir/oa-talk.wav; pid=$dir/oa-talk.pid
+case ${1:-} in
+  start) [[ -e $pid ]] && exit 0; umask 077; timeout 30 pw-record --rate 16000 --channels 1 "$wav" & echo $! >"$pid" ;;
+  stop) [[ -e $pid ]] || exit 0; kill -INT "$(<"$pid")" 2>/dev/null || true; rm -f "$pid"; sleep 0.1; trap 'rm -f "$wav"' EXIT; python3 "$here/oad.py" hear "$wav" ;;
+  *) echo "usage: oa-talk start|stop" >&2; exit 2 ;;
+esac
