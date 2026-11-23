@@ -36,3 +36,5 @@ A stronger recogniser, Whisper small.en with no hints, on two of the voices (134
 The names lift the small model and wreck the large one. Why was not looked into. Use them only with a model they were tested on.
 
 **The cost.** Twenty words that were not on screen, in two voices, chosen to sound like ones that were: 3 of 40 pressed something without hints, 5 of 40 with them ("press pace" became Paste, "press bald" became Bold). Ten ordinary remarks in two voices were never taken as commands. A web page could also name a button to pull hearing toward it, which was not tested.
+
+Nemotron Speech Streaming 0.6b, int8, on a loaded processor, no hints, same clips: the 160 ms build pressed 117 clean and 74 in noise, finishing 894 and 908 ms after speech; the 560 ms build 115 and 60, finishing 376 and 497 ms. No wrong presses. Compute time on a busy machine, so a graphics card would change the times. Its weights carry NVIDIA's own licence. Moonshine was not tested.

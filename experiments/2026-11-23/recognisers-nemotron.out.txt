@@ -1,0 +1,4 @@
+nemo-160ms clean  {'press_right': 117, 'press_wrong': 0, 'ask_right': 9, 'ask_wrong': 0, 'nothing': 8} after-speech median 894 max 2446 ms
+nemo-160ms 5 dB   {'press_right': 74, 'press_wrong': 0, 'ask_right': 19, 'ask_wrong': 0, 'nothing': 41} after-speech median 908 max 2411 ms
+nemo-560ms clean  {'press_right': 115, 'press_wrong': 0, 'ask_right': 7, 'ask_wrong': 0, 'nothing': 12} after-speech median 376 max 1042 ms
+nemo-560ms 5 dB   {'press_right': 60, 'press_wrong': 0, 'ask_right': 23, 'ask_wrong': 0, 'nothing': 51} after-speech median 497 max 1478 ms

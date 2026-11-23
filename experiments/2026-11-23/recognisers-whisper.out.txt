@@ -1,0 +1,8 @@
+whisper small.en no hints      clean  {'press_right': 122, 'press_wrong': 0, 'ask_right': 8, 'ask_wrong': 0, 'nothing': 4} median 150 ms
+whisper small.en no hints      5 dB   {'press_right': 78, 'press_wrong': 0, 'ask_right': 21, 'ask_wrong': 1, 'nothing': 34} median 220 ms
+whisper small.en screen names  clean  {'press_right': 132, 'press_wrong': 0, 'ask_right': 1, 'ask_wrong': 0, 'nothing': 1} median 210 ms
+whisper small.en screen names  5 dB   {'press_right': 113, 'press_wrong': 0, 'ask_right': 9, 'ask_wrong': 0, 'nothing': 12} median 200 ms
+whisper large-v3-turbo no hints      clean  {'press_right': 123, 'press_wrong': 0, 'ask_right': 2, 'ask_wrong': 0, 'nothing': 9} median 340 ms
+whisper large-v3-turbo no hints      5 dB   {'press_right': 82, 'press_wrong': 0, 'ask_right': 17, 'ask_wrong': 1, 'nothing': 34} median 330 ms
+whisper large-v3-turbo screen names  clean  {'press_right': 75, 'press_wrong': 0, 'ask_right': 7, 'ask_wrong': 0, 'nothing': 52} median 390 ms
+whisper large-v3-turbo screen names  5 dB   {'press_right': 55, 'press_wrong': 0, 'ask_right': 14, 'ask_wrong': 1, 'nothing': 64} median 475 ms
