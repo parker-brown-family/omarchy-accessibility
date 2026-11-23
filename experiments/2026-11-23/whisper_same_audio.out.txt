@@ -1,0 +1,6 @@
+beam                       clean  {'press_right': 61, 'press_wrong': 0, 'ask_right': 25, 'ask_wrong': 0, 'nothing': 48}
+beam + screen names (1.5)  clean  {'press_right': 111, 'press_wrong': 0, 'ask_right': 9, 'ask_wrong': 0, 'nothing': 14}
+whisper small.en           clean  {'press_right': 122, 'press_wrong': 0, 'ask_right': 5, 'ask_wrong': 0, 'nothing': 7}
+beam                       5 dB   {'press_right': 9, 'press_wrong': 0, 'ask_right': 12, 'ask_wrong': 0, 'nothing': 113}
+beam + screen names (1.5)  5 dB   {'press_right': 42, 'press_wrong': 0, 'ask_right': 12, 'ask_wrong': 1, 'nothing': 79}
+whisper small.en           5 dB   {'press_right': 74, 'press_wrong': 0, 'ask_right': 22, 'ask_wrong': 3, 'nothing': 35}

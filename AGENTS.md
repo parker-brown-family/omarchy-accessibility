@@ -1,6 +1,6 @@
 # Omarchy Accessibility
 
-A blind person should be able to install, unlock and use Omarchy by listening and talking. Open source. Research stage: no product code yet.
+A blind person should be able to install, unlock and use Omarchy by listening and talking. Open source. Research stage: `loop/oa.py` is a first trial, not a product.
 
 - **Fixes to Omarchy's own shell go upstream**, to `omacom/omarchy`, where several developers, and a blind user offering to test, are already active. Check their open pull requests before writing anything. This repository holds what does not fit there.
 - **Local by default.** A blind person's screen text and microphone do not leave the machine unless they turn that on.

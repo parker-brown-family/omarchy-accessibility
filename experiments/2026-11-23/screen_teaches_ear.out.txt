@@ -1,0 +1,15 @@
+greedy                     clean  {'press_right': 179, 'press_wrong': 0, 'ask_right': 61, 'ask_wrong': 2, 'nothing': 93} after-speech median 130 ms
+greedy                     5 dB   {'press_right': 61, 'press_wrong': 0, 'ask_right': 42, 'ask_wrong': 1, 'nothing': 231} after-speech median 70 ms
+beam                       clean  {'press_right': 174, 'press_wrong': 0, 'ask_right': 64, 'ask_wrong': 2, 'nothing': 95} after-speech median 76 ms
+   missed, first 8: [('l.onnx', 'Bookmark', 'THE PRESS BOOK MARK'), ('l.onnx', 'Center', 'OPPRESS CENTRE'), ('l.onnx', 'Change-Tracking Functions', 'THE PRESS CHANGE RACKING FUNCTIONS'), ('l.onnx', 'Character Highlighting Color', 'THE PRESS CHARACTER HIGHLAIGHT IN COLOR'), ('l.onnx', 'Chart', 'CHRIS CHART'), ('l.onnx', 'Clone Formatting', 'PRESS KLONE FOREMATTING'), ('l.onnx', 'Decrease', 'PRESTY CREASE'), ('l.onnx', 'Draw Functions', 'PRESS DROLL FUNCTIONS')]
+beam                       5 dB   {'press_right': 53, 'press_wrong': 0, 'ask_right': 42, 'ask_wrong': 1, 'nothing': 239} after-speech median 72 ms
+beam + screen names (1.5)  clean  {'press_right': 266, 'press_wrong': 1, 'ask_right': 25, 'ask_wrong': 2, 'nothing': 41} after-speech median 69 ms
+   missed, first 8: [('l.onnx', 'Bookmark', 'THE PRESS BOOKMARK'), ('l.onnx', 'Change-Tracking Functions', 'THE PRESS CHANGE TRACKING FUNCTIONS'), ('l.onnx', 'Edit', 'PRESS AT IT'), ('l.onnx', 'Endnote', 'PRESENT NOTE'), ('l.onnx', 'Export Directly as PDF', 'PRESS EXPORT DIRECTLY AS'), ('l.onnx', 'Open', 'CHRIS OPENED'), ('l.onnx', 'Print Preview', 'THE PRESS PRINT PREVIEW'), ('l.onnx', 'Redo', 'PRESS REDOU')]
+beam + screen names (1.5)  5 dB   {'press_right': 138, 'press_wrong': 1, 'ask_right': 37, 'ask_wrong': 5, 'nothing': 154} after-speech median 70 ms
+beam + screen names (2.5)  clean  {'press_right': 275, 'press_wrong': 1, 'ask_right': 25, 'ask_wrong': 2, 'nothing': 32} after-speech median 67 ms
+beam + screen names (2.5)  5 dB   {'press_right': 165, 'press_wrong': 5, 'ask_right': 34, 'ask_wrong': 3, 'nothing': 128} after-speech median 70 ms
+greedy                     20 absent names: pressed 1 [('Bald', 'PRESS BOLD', 'Bold')], asked about 5
+beam                       20 absent names: pressed 1 [('Bald', 'PRESS BOLD', 'Bold')], asked about 3
+beam + screen names (1.5)  20 absent names: pressed 2 [('Pace', 'PRESS PASTE', 'Paste'), ('Bald', 'PRESS BOLD', 'Bold')], asked about 6
+beam + screen names (2.5)  20 absent names: pressed 3 [('Send', 'PRESS END', 'End'), ('Pace', 'PRESS PASTE', 'Paste'), ('Bald', 'PRESS BOLD', 'Bold')], asked about 5
+67 names 670 clips
