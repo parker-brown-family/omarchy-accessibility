@@ -13,7 +13,7 @@
 | Nothing left behind | after a finished run, a failing script, a timeout, and the caller being terminated or killed: no machine running and no folder left on the host, image hash unchanged. A hard kill (SIGKILL) of the caller does leave its small staging folder in `/tmp` on the calling computer. A marker file from one machine was absent in the next. |
 | Exit status | the script's own (7 came back as 7); a timeout gives 125 and no results |
 
-Small Whisper wrote "Amaki" for "Omarchy" and "foam" for "Home", from the default eSpeak voice, so this is one voice and a few words. It is a warning about "Omarchy" as a wake word, and no more.
+Small Whisper wrote "Amaki" for "Omarchy". **Corrected the same evening:** that was eSpeak saying the name wrongly (ˈɒmɑːki), and not a fault in the name. Two Kokoro voices saying it as oh-MAH-chee, in six short phrases each, were heard as "Omachi" all twelve times with no hint, and as "Omarchy" all twelve times with the name in the recogniser's prompt, though one phrase was then misheard ("opened Nautilus"). Synthetic voices, no noise, and no count of false triggers. Any voice we ship must be told how to say Omarchy.
 
 ## A first hearing of Omarchy, not yet a result
 
@@ -22,7 +22,7 @@ With Orca running on plain Omarchy, opening Nautilus gave "Home", "Home", "Conte
 ## Limits
 
 - The packages come from Omarchy's stable mirror on the day of the run, onto a week-old image. Orca was 51.1, AT-SPI 2.62.1.
-- The machine has no graphics card, so nothing here times a recogniser, and no microphone yet. QEMU's sound card only plays.
+- The virtual machine has no graphics card and no microphone, so nothing inside it times a recogniser. The host may well have both. QEMU's sound card here only plays.
 - The virtio display was missing from the host's QEMU; `setup` takes Arch's signed module when it is.
 - Nobody blind has heard any of it.
 
