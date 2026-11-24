@@ -9,5 +9,6 @@ A blind person should be able to install, unlock and use Omarchy by listening an
 - **Tests that need an accessibility bus run on a private display, a private D-Bus and a private `XDG_RUNTIME_DIR`.** `experiments/2026-11-23/run-trees.sh` shows how, and why.
 - **Decisions are argued from `wiki/`.** A decision cites findings, a finding cites sources, a source quotes itself. Run `python3 tools/check_wiki.py` and `python3 -m unittest discover -s tests` before a commit. Replace a decision by superseding it; never edit away why it was made.
 - **This repository is public.** Working briefs (`reports/`) and stored copies of other people's papers (`snapshots/`) stay on this machine, and nothing about approaching a named person goes in.
+- Anything that needs a whole Omarchy runs in a throwaway one: `tools/vm.sh`, described in `docs/research/2026-11-23-throwaway-omarchy.md`.
 - Measurements: `docs/research/`. New sources: `tools/snapshot.sh`. The recogniser experiments: `experiments/2026-11-23/setup.sh`.
 - Picking this up on the owner's machine: read the newest file in `reports/handoffs/` first (local only).
