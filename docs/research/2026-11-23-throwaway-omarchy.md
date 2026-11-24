@@ -10,7 +10,7 @@
 | Desktop | Hyprland and Omarchy's shell running, seen in a photograph |
 | Words | "Welcome to Omarchy. No applications open." and Orca's "Screen reader on." both recorded as finished; a message stopped halfway recorded as cut off |
 | Sound | a recogniser given the recording wrote "welcome to Amaki, no applications open. screen reader on foam foam content view text" |
-| Nothing left behind | after a finished run, a failing script, a timeout, and the caller being terminated or killed: no machine running, no folder left, image hash unchanged. A marker file from one machine was absent in the next. |
+| Nothing left behind | after a finished run, a failing script, a timeout, and the caller being terminated or killed: no machine running and no folder left on the host, image hash unchanged. A hard kill (SIGKILL) of the caller does leave its small staging folder in `/tmp` on the calling computer. A marker file from one machine was absent in the next. |
 | Exit status | the script's own (7 came back as 7); a timeout gives 125 and no results |
 
 Small Whisper wrote "Amaki" for "Omarchy" and "foam" for "Home", from the default eSpeak voice, so this is one voice and a few words. It is a warning about "Omarchy" as a wake word, and no more.
